@@ -12,8 +12,8 @@
 
     <properties>
         <io.grpc.version>1.40.1</io.grpc.version>
-        <protoc.version>3.21.5</protoc.version>
-        <protoc-jar-maven-plugin.version>3.21.5</protoc-jar-maven-plugin.version>
+        <protoc.version>3.17.0</protoc.version>
+        <protoc-jar-maven-plugin.version>3.17.5</protoc-jar-maven-plugin.version>
         <os-maven-plugin.version>1.6.2</os-maven-plugin.version>
         <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
         <annotation-api.version>1.2</annotation-api.version>

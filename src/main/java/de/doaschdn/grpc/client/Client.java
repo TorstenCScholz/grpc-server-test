@@ -6,8 +6,8 @@ import io.grpc.ManagedChannelBuilder;
 
 public class Client {
   public static void main(String[] args) {
-    if (args.length != 2) {
-      System.out.println("Invalid number of arguments. Require exactly firstname and lastname.");
+    if (args.length != 3) {
+      System.out.println("Invalid number of arguments. Require exactly firstname and lastname and age.");
       System.exit(-1);
       return;
     }
@@ -22,6 +22,7 @@ public class Client {
     var helloResponse = stub.hello(HelloRequest.newBuilder()
             .setFirstName(args[0])
             .setLastName(args[1])
+            .setAge(Integer.parseInt(args[2]))
             .build());
 
     System.out.println("Response received from server:\n" + helloResponse);

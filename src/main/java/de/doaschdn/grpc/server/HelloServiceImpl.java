@@ -16,6 +16,8 @@ public class HelloServiceImpl extends HelloServiceGrpc.HelloServiceImplBase {
             .append(request.getFirstName())
             .append(" ")
             .append(request.getLastName())
+            .append(" ")
+            .append(request.getAge())
             .toString();
 
     var response = HelloResponse.newBuilder()
